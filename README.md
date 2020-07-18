@@ -1,11 +1,19 @@
 # Modal
 
-'Modal' is a native javascript code for show and hide modal windows on a web page. 
+'Modal' is a native javascript module for show and hide modal windows on a web page.
 
-- Show by clicking a button. 
-- Hide by clicking a button, outside of modal. 
-- No scroll when modal active. 
+- Show by clicking a button.
+- Hide by clicking a button, outside of modal.
+- No scroll when modal active.
 - When user scroll down to the end of a page modal shows.
+
+Example of usage:
+
+```javascript
+const modalTimerId = setTimeout(() => openModal('.modal', modalTimerId), 300000);
+
+modal('[data-modal]', '.modal', modalTimerId);
+```
 
 Example of html markup:
 
